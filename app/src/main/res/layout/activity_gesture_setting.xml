@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.GestureActivitySetting">
+
+    <include
+        layout="@layout/top_toolbar"/>
+
+    <RelativeLayout
+        android:paddingTop="@dimen/dimen_10dp"
+        android:paddingBottom="@dimen/dimen_10dp"
+        android:background="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/m_font_color_normal"
+            android:textSize="@dimen/font_size_maintitle"
+            android:text="使用手势密码登录" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/gesture_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="25dp"
+            android:longClickable="false"
+            android:textColor="@color/white"
+            fancy:switchPadding="5dp" />
+        
+    </RelativeLayout>
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/gesture_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        fancy:fb_borderColor="#FFFFFF"
+        android:background="@drawable/round_btn"
+        fancy:fb_borderWidth="1dp"
+        fancy:fb_defaultColor="@color/binding"
+        fancy:fb_focusColor="@color/binding"
+        fancy:fb_iconPosition="left"
+        fancy:fb_radius="25dp"
+        fancy:fb_text="修改手势密码"
+        fancy:fb_textColor="#FFFFFF" />
+
+</LinearLayout>

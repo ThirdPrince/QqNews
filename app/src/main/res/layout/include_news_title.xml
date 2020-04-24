@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/article_title"
+    style="@style/news_title"
+    android:text=""
+    android:textColor="@color/m_font_color_normal"
+    />

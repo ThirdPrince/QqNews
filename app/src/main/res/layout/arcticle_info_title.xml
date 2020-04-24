@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="@dimen/dimen_10dp"
+    android:layout_marginRight="@dimen/dimen_10dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/m_font_color_normal"
+            android:textSize="24sp"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/author_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_999"
+                android:textSize="13sp"
+                />
+            <TextView
+                android:id="@+id/time_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:layout_marginStart="@dimen/dimen_10dp"
+                android:textSize="13sp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E7E7E7"/>
+
+    <TextView
+        android:id="@+id/content_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        />
+</LinearLayout>

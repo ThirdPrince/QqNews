@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:focusable="true"
+    android:paddingTop="@dimen/dimen_5dp"
+    tools:context="com.yq.news.activity.SearchActivity">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_10dp"
+            android:src="@drawable/ic_arrow_back_black_24dp"/>
+
+        <LinearLayout
+            android:padding="@dimen/dimen_5dp"
+            android:background="@drawable/search_edit_round"
+            android:orientation="horizontal"
+            android:layout_marginEnd="@dimen/dimen_5dp"
+            android:layout_width="match_parent"
+            android:weightSum="10"
+            android:layout_height="45dp">
+
+            <ImageView
+                android:id="@+id/image_search"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dimen_5dp"
+                android:src="@drawable/sousuo"/>
+
+            <com.yq.news.view.ClearEditText
+                android:id="@+id/text_search"
+                android:layout_toLeftOf="@+id/line"
+                android:layout_centerVertical="true"
+                android:textColor="#000"
+                android:layout_width="0dp"
+                android:layout_weight="8"
+                android:singleLine="true"
+                android:imeOptions="actionSearch"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:cursorVisible="true"
+                android:textCursorDrawable="@null"
+                android:textColorHint="@color/white"
+                android:background="@null"
+                android:layout_height="match_parent"/>
+            <View
+                android:id="@+id/line"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_toLeftOf="@id/search_tv"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:layout_marginBottom="@dimen/dimen_5dp"
+                android:layout_marginStart="@dimen/dimen_10dp"
+                android:layout_marginEnd="@dimen/dimen_10dp"
+                android:background="#B5BABD"/>
+            <TextView
+                android:id="@+id/search_tv"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="搜索"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen_5dp"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+</LinearLayout>

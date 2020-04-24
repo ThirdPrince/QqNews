@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_item"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_centerVertical="true"
+    android:background="?selectableItemBackground"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:layout_marginBottom="@dimen/dimen_5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/subscribe_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="12dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_dyh" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@id/subscribe_img"
+            android:layout_marginRight="25dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="@color/m_font_color_normal"
+                android:textSize="16sp"/>
+
+          <!--  <TextView
+                android:id="@+id/contact_department"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:visibility="gone"
+                android:textColor="@color/m_grey_bgcolor_light"
+                android:textSize="13sp"/>-->
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/subscribe_tv"
+            android:paddingTop="@dimen/dimen_5dp"
+            android:paddingBottom="@dimen/dimen_5dp"
+            android:paddingStart="@dimen/dimen_10dp"
+            android:paddingEnd="@dimen/dimen_10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/subscribe_tv_round"
+            android:drawableStart="@drawable/follow"
+            android:textColor="@drawable/selector_subscribe"
+            android:text="关注"/>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.2dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="63dip"
+        android:background="@color/m_divider_line_color"/>
+
+</RelativeLayout>

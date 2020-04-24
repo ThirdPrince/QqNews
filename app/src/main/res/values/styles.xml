@@ -1,0 +1,144 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ActivityTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SplashActivityTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="DeepLinkTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="GestureTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Theme.NoBackgroundAndTitleMain" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+
+    <!-- Pad版更多导航 -->
+    <style name="MineFragmentIndex">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:drawableRight">@drawable/mine_arrow</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/m_font_color_normal</item>
+        <item name="android:textSize">@dimen/font_size_maintitle</item>
+    </style>
+
+    <style name="MyTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:drawableRight">@drawable/mine_arrow</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/m_font_color_normal</item>
+        <item name="android:textSize">@dimen/font_size_maintitle</item>
+    </style>
+
+
+    <style name="Remember_CheckBox" parent="@android:style/Widget.Material.CompoundButton.CheckBox">
+        <item name="android:colorControlActivated">@color/colorPrimary</item>
+        <item name="android:colorControlNormal">@color/gray</item>
+    </style>
+
+    <style name="SwitchButtonStyle">
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+    <style name="SwitchCompat.Control" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorSwitchThumbNormal">@color/colorAccent</item>
+        <item name="android:colorForeground">@color/colorAccent</item>
+    </style>
+
+    <style name="SwitchCompat.Text" parent="Theme.AppCompat.Light">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">9dp</item>
+    </style>
+
+    <style name="SwitchStyle" parent="AppTheme">
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- WW代表宽高为wrap_content，wrap_content -->
+    <style name="WW">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ImageView_WW" >-->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:scaleType">center</item>
+    </style>
+
+    <style name="ImageView_Main_Page" >-->
+        <item name="android:layout_width">112dp</item>
+        <item name="android:layout_height">69dp</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <!--设置TabLayout内文字的字体大小-->
+    <style name="MyTabLayoutTextAppearance">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="news_text_style">
+        <item name="android:textColor">@color/color_create_time</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineSpacingExtra">0.0dip</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="news_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+
+    <style name="dialogSlideAnim" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_bottom_slide_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_bottom_slide_out</item>
+    </style>
+</resources>

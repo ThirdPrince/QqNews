@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".activity.SettingActivity">
+
+
+    <include
+        layout="@layout/top_toolbar"/>
+    <EditText
+        android:id="@+id/setting_et_ip"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/dimen_20dp"
+        android:layout_height="wrap_content"
+        android:hint="请输入IP"
+        android:digits="1234567890."
+        android:inputType="number|numberDecimal"
+        />
+
+    <EditText
+        android:id="@+id/setting_et_port"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/dimen_20dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="请输入端口"
+        />
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        fancy:fb_textSize = "16sp"
+        android:layout_margin="12dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        fancy:fb_borderColor="@color/white"
+        android:background="@drawable/round_btn"
+        fancy:fb_borderWidth="1dp"
+        fancy:fb_defaultColor="@color/white"
+        fancy:fb_focusColor="@color/white"
+        fancy:fb_iconPosition="left"
+        fancy:fb_radius="5dp"
+        fancy:fb_text="保存"
+        fancy:fb_textColor="@color/binding" />
+
+
+</LinearLayout>

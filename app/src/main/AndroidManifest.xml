@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.yq.news">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+     <!-- the following 2 com.xiaomi.mipushdemo should be changed to your package name -->
+    <permission
+        android:name="com.yq.news.permission.MIPUSH_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.yq.news.permission.MIPUSH_RECEIVE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".app.MyApplication"
+        android:allowBackup="true"
+        android:appComponentFactory="@string/app_name"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:installLocation="preferExternal"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:appComponentFactory">
+        <activity
+            android:name=".activity.SplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashActivityTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.GestureActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/GestureTheme" />
+        <activity
+            android:name=".activity.SelectCompanyActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme" />
+        <activity
+            android:name=".activity.ModifyPasswordActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme" />
+        <activity
+            android:name=".activity.PersonInfoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme" />
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme" />
+        <activity
+            android:name=".activity.SettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme" />
+        <activity
+            android:name=".activity.GestureActivitySetting"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme" />
+        <activity
+            android:name=".activity.ArticleDetailActivity"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            android:theme="@style/ActivityTheme">
+        </activity>
+
+        <activity android:name=".activity.DeepLinkActivity"
+            android:theme="@style/DeepLinkTheme"
+            android:exported="true"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:host="com.yq.push"
+                    android:path="/deeplink"
+                    android:scheme="pushscheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.AddArticleActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme" />
+        <activity
+            android:name=".activity.FavoritesListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme" />
+        <activity
+            android:name=".activity.PointListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme" />
+        <activity
+            android:name=".activity.DeviceBindingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme" />
+        <activity
+            android:name=".activity.SearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name=".activity.IndustyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme" />
+        <activity
+            android:name=".activity.CityActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme" />
+
+        <provider
+            android:authorities="${applicationId}.fileprovider"
+            android:name="android.support.v4.content.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            >
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/fileprovider"></meta-data>
+        </provider>
+        <receiver
+            android:name=".mipush.DemoMessageReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.xiaomi.push.service.receivers.PingReceiver"
+            android:exported="false"
+            android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".hwpush.MyPushService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.huawei.push.action.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:enabled="true"
+            android:process=":pushservice"
+            android:name="com.xiaomi.push.service.XMPushService"/>
+
+        <service
+            android:name="com.xiaomi.push.service.XMJobService"
+            android:enabled="true" android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:process=":pushservice" /> <!--注：此service必须在3.0.1版本以后（包括3.0.1版本）加入-->
+
+        <service
+            android:enabled="true"
+            android:exported="true"
+            android:name="com.xiaomi.mipush.sdk.PushMessageHandler" />
+
+        <service
+            android:enabled="true"
+            android:name="com.xiaomi.mipush.sdk.MessageHandleService" /> <!--注：此service必须在2.2.5版本以后（包括2.2.5版本）加入--> <receiver android:exported="true" android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver" >
+
+        <intent-filter>
+
+            <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+
+        </intent-filter>
+
+    </receiver>
+
+        <receiver android:exported="false"
+            android:process=":pushservice"
+            android:name="com.xiaomi.push.service.receivers.PingReceiver" >
+
+            <intent-filter>
+
+                <action android:name="com.xiaomi.push.PING_TIMER" />
+
+            </intent-filter>
+
+        </receiver>
+
+    </application>
+
+</manifest>

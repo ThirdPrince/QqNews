@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yq.news.activity.DeviceBindingActivity">
+
+    <include
+        layout="@layout/top_toolbar"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_margin="@dimen/dimen_10dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/sj"/>
+
+            <ImageView
+                android:id="@+id/binding_img"
+                android:layout_margin="@dimen/dimen_20dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/jcbd"/>
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ren"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="设备绑定后，将只能在该设备上\n        登录, 为你保护账号安全"/>
+
+        <LinearLayout
+            android:id="@+id/deviceId_layout"
+            android:visibility="invisible"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/sj" />
+
+            <TextView
+                android:id="@+id/deviceId_tv"
+                android:textSize="12sp"
+                android:layout_marginStart="@dimen/dimen_5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#CCD8E2"
+                android:text="HLA-A00 本机"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/binding_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_50dp"
+        android:layout_marginEnd="@dimen/dimen_50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dimen_80dp"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        fancy:fb_borderColor="#FFFFFF"
+        android:background="@drawable/round_btn"
+        fancy:fb_borderWidth="1dp"
+        fancy:fb_defaultColor="#0099FA"
+        fancy:fb_focusColor="#0099FA"
+        fancy:fb_iconPosition="left"
+        fancy:fb_radius="25dp"
+        fancy:fb_text="绑定"
+        fancy:fb_textColor="#FFFFFF" />
+
+</RelativeLayout>

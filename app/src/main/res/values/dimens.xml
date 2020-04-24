@@ -1,0 +1,53 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="font_size_maintitle">16sp</dimen>
+    <dimen name="dimen_100dp">100dp</dimen>
+    <dimen name="dimen_22dp">22dp</dimen>
+    <dimen name="dimen_0dp">0dp</dimen>
+    <dimen name="dp_4">4dp</dimen>
+    <dimen name="dimen_400dp">400dp</dimen>
+    <dimen name="dimen_150dp">150dp</dimen>
+    <dimen name="dimen_210dp">210dp</dimen>
+    <dimen name="dimen_9dp">9dp</dimen>
+    <dimen name="dimen_10dp">10dp</dimen>
+    <dimen name="dimen_20dp">20dp</dimen>
+    <dimen name="dimen_55dp">55dp</dimen>
+    <dimen name="dimen_60dp">60dp</dimen>
+    <dimen name="dimen_27dp">27dp</dimen>
+    <dimen name="dimen_15dp">15dp</dimen>
+    <dimen name="dimen_17dp">17dp</dimen>
+    <dimen name="dimen_120dp">120dp</dimen>
+    <dimen name="dimen_180dp">180dp</dimen>
+    <dimen name="dimen_50dp">50dp</dimen>
+    <dimen name="dimen_25dp">25dp</dimen>
+    <dimen name="dimen_4dp">4dp</dimen>
+    <dimen name="dimen_5dp">5dp</dimen>
+    <dimen name="dimen_7dp">7dp</dimen>
+    <dimen name="dimen_140dp">140dp</dimen>
+    <dimen name="dimen_145dp">145dp</dimen>
+    <dimen name="dimen_220dp">220dp</dimen>
+    <dimen name="dimen_300dp">300dp</dimen>
+    <dimen name="dimen_40dp">40dp</dimen>
+    <dimen name="dimen_38dp">38dp</dimen>
+    <dimen name="dimen_80dp">80dp</dimen>
+    <dimen name="dimen_30dp">30dp</dimen>
+    <dimen name="dimen_33dp">33dp</dimen>
+    <dimen name="dimen_200dp">200dp</dimen>
+    <dimen name="dimen_250dp">245dp</dimen>
+    <dimen name="dimen_360dp">360dp</dimen>
+    <dimen name="dp_16">16dp</dimen>
+    <dimen name="dimen_18dp">18dp</dimen>
+    <dimen name="dimen_3dp">3dp</dimen>
+    <dimen name="dimen_90dp">90dp</dimen>
+    <dimen name="dimen_6dp">6dp</dimen>
+    <dimen name="dimen_110dp">110dp</dimen>
+
+    <dimen name="main_page_margin_left">12dp</dimen>
+    <dimen name="main_page_txt_sp">18sp</dimen>
+    <dimen name="main_page_txt_time_sp">12sp</dimen>
+    <dimen name="main_page_txt_margin_left">16dp</dimen>
+    <dimen name="main_page_type_padding">12dp</dimen>
+    <dimen name="main_page_text_size">16sp</dimen>
+</resources>

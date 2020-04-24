@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4587f7</color>
+    <color name="colorPrimaryDark">#FFf9f9f9</color>
+    <color name="colorAccent">#FF63B8FF</color>
+    <color name="colorTitle">#FFC107</color>
+    <color name="gray">#ff5e5e5e</color>
+    <color name="color_999">#999999</color>
+    <color name="m_divider_line_color">#DFDFDF</color>
+    <color name="m_header_bgcolor">#FFf9f9f9</color>
+    <color name="m_font_color_normal">#111111</color>
+    <color name="m_body_bgcolor_grey">#FFF4F4F4</color>
+    <color name="m_grey_bgcolor_light">#FFbababa</color>
+    <color name="m_changestyle_font_color">#4587f7</color>  <!--字体颜色-->
+    <color name="blue">#4587f7</color>
+    <color name="space">#EDEDED</color>
+    <color name="binding">#2196f3</color>
+    <color name="unbind">#CEE9FF</color>
+    <color name="text_gray_hint">#FFCFCFCF</color>
+    <color name="color_f6">#f6f6f6</color>
+    <color name="color_create_time">#666666</color>
+    <color name="text_grey">#AEAEAE</color>
+
+</resources>

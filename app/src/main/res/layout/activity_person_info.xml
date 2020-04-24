@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/m_body_bgcolor_grey"
+    android:clickable="false"
+    android:orientation="vertical" >
+
+    <include
+        layout="@layout/top_toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:background="@color/m_body_bgcolor_grey"
+        android:fadingEdgeLength="0dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <!-- 上面部分 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/user_facelayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="?attr/selectableItemBackground"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:paddingStart="15dip" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="left|center"
+                            android:text="头像"
+                            android:singleLine="true"
+                            android:textColor="@color/m_grey_bgcolor_light"
+                            android:textSize="@dimen/font_size_maintitle" />
+
+                        <ImageView
+                            android:id="@+id/choose_Avatar_view"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="12dip"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/touxiang" />
+
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_alignParentEnd="true"-->
+                            <!--android:layout_centerVertical="true"-->
+                            <!--android:layout_marginEnd="12dip"-->
+                            <!--android:gravity="center"-->
+                            <!--android:orientation="horizontal" >-->
+
+                         <!--&lt;!&ndash;<com.fiberhome.mobileark.ui.widget.CircleView&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:id="@+id/person_header"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:layout_width="50dip"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:layout_height="50dip"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:layout_gravity="center"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:layout_marginRight="7dip"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:scaleType="fitXY"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:textColor="#ffffff"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:textSize="18sp" />&ndash;&gt;-->
+
+                            <!--<ImageView-->
+                                <!--android:id="@+id/u_faceimg_img"-->
+                                <!--android:layout_width="50dip"-->
+                                <!--android:layout_height="50dip"-->
+                                <!--android:layout_gravity="center"-->
+                                <!--android:layout_marginEnd="7dip"-->
+                                <!--android:visibility="gone" >-->
+                            <!--</ImageView>-->
+
+                            <!--<ImageView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_gravity="center"-->
+                                <!--android:src="@drawable/mine_arrow" >-->
+                            <!--</ImageView>-->
+
+                        <!--</LinearLayout>-->
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.2dip"
+                        android:background="@color/m_divider_line_color"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="?attr/selectableItemBackground"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:paddingStart="15dip" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="left|center"
+                            android:singleLine="true"
+                            android:text="@string/person_name"
+                            android:textColor="@color/m_grey_bgcolor_light"
+                            android:textSize="@dimen/font_size_maintitle" />
+
+                        <TextView
+                            android:id="@+id/username_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="12dip"
+                            android:gravity="center"
+                            android:textColor="@color/m_font_color_normal"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.2dip"
+                        android:background="@color/m_divider_line_color" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="?attr/selectableItemBackground"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:paddingStart="15dip" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="left|center"
+                            android:singleLine="true"
+                            android:text="账号"
+                            android:textColor="@color/m_grey_bgcolor_light"
+                            android:textSize="@dimen/font_size_maintitle" />
+
+                        <TextView
+                            android:id="@+id/account_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="12dip"
+                            android:gravity="center"
+                            android:text="215"
+                            android:textColor="@color/m_font_color_normal"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.2dip"
+                        android:background="@color/m_divider_line_color" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="?attr/selectableItemBackground"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:paddingStart="15dip" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="left|center"
+                            android:singleLine="true"
+                            android:text="手机号"
+                            android:textColor="@color/m_grey_bgcolor_light"
+                            android:textSize="@dimen/font_size_maintitle" />
+
+                        <TextView
+                            android:id="@+id/phone_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="12dip"
+                            android:gravity="center"
+                            android:text="215"
+                            android:textColor="@color/m_font_color_normal"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.2dip"
+                        android:background="@color/m_divider_line_color" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="?attr/selectableItemBackground"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:paddingStart="15dip" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="left|center"
+                            android:singleLine="true"
+                            android:text="所属部门"
+                            android:textColor="@color/m_grey_bgcolor_light"
+                            android:textSize="@dimen/font_size_maintitle" />
+
+                        <TextView
+                            android:id="@+id/dept_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="12dip"
+                            android:gravity="center"
+                            android:text="215"
+                            android:textColor="@color/m_font_color_normal"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.2dip"
+                        android:background="@color/m_divider_line_color" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="?attr/selectableItemBackground"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:paddingStart="15dip" >
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="left|center"
+                            android:singleLine="true"
+                            android:text="邮箱"
+                            android:textColor="@color/m_grey_bgcolor_light"
+                            android:textSize="@dimen/font_size_maintitle" />
+
+                        <TextView
+                            android:id="@+id/email_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="12dip"
+                            android:gravity="center"
+                            android:text="215"
+                            android:textColor="@color/m_font_color_normal"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.2dip"
+                        android:background="@color/m_divider_line_color" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.2dip"
+                android:background="@color/m_divider_line_color" />
+            <!-- 上部分  end -->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

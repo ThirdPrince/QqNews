@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+     <include layout="@layout/fragment_smart_refresh"/>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:id="@+id/fb"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        app:elevation="6dp"
+        android:clickable="true"
+        android:src="@drawable/add"
+        app:borderWidth="0dp"
+        app:rippleColor="#0097a7"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        app:pressedTranslationZ="12dp"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

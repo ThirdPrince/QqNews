@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingTop="@dimen/dimen_5dp"
+    tools:context="com.yq.news.activity.SearchActivity">
+
+    <include
+        layout="@layout/activity_search_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        />
+    <include
+        layout="@layout/fragment_smart_refresh_divider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dimen_50dp"
+        />
+    <include layout="@layout/empty_news_view"/>
+
+</RelativeLayout>

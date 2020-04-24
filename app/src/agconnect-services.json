@@ -1,0 +1,11 @@
+{
+	"client":{
+		"cp_id":"260086000050303422",
+		"product_id":"9105385871708172750",
+		"client_id":"214806022051595264",
+		"client_secret":"635014A7B9A11D80FFCAC39DCCC2F8B42D3B1743817CBFE800F9B5601F3C704B",
+		"app_id":"101265691",
+		"package_name":"com.yq.news"
+	},
+	"configuration_version":"1.0"
+}

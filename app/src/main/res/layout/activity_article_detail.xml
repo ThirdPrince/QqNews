@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.ArticleDetailActivity">
+    <include
+        layout="@layout/top_toolbar"
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        />
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_below="@id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dimen_50dp"
+        android:orientation="vertical"
+        >
+
+        <WebView
+            android:id="@+id/web_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcy_view"
+        android:layout_below="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:layout_marginBottom="@dimen/dimen_50dp"
+        android:visibility="gone"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/dimen_5dp"
+            android:textSize="16sp"
+            android:text="仅供参阅，请勿转发！"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_20dp"
+            >
+        <TextView
+            android:id="@+id/collection_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/wsc"
+            android:drawablePadding="@dimen/dimen_5dp"
+            android:textSize="16sp"
+            android:text=""
+            />
+
+        <TextView
+            android:id="@+id/encourage_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/wdz"
+            android:drawablePadding="@dimen/dimen_5dp"
+            android:layout_marginStart="@dimen/dimen_15dp"
+            android:textSize="16sp"
+            android:text=""
+            />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

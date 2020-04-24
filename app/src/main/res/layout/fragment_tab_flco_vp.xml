@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <!-- 共用的Tablayout + viewPager -->
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+
+       >
+
+           <com.flyco.tablayout.SlidingTabLayout
+               android:id="@+id/sliding_tab"
+               android:layout_width="0dp"
+               android:layout_weight="9"
+               android:layout_height="48dp"
+               android:background="@color/white"
+               tl:tl_indicator_color="#FF63B8FF"
+               tl:tl_textSelectColor="#FF63B8FF"
+               tl:tl_textUnselectColor="@android:color/black"
+               tl:tl_indicator_height="3dp"
+               tl:tl_indicator_width="20dp"
+               tl:tl_textsize="18sp"
+               tl:tl_tab_padding="10dp"
+               tl:tl_indicator_margin_left="2dp"
+               tl:tl_indicator_margin_right="2dp"
+               />
+
+       <LinearLayout
+           android:id="@+id/search_btn_lay"
+           android:gravity="center"
+           android:layout_weight="1"
+           android:background="@color/white"
+           android:layout_alignParentEnd="true"
+           android:layout_width="0dp"
+           android:layout_height="@dimen/dimen_50dp">
+
+
+
+           <ImageView
+               android:id="@+id/search_btn"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:paddingLeft="5dp"
+               android:scaleType="center"
+               android:src="@drawable/sousuo" />
+
+       </LinearLayout>
+   </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/content_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </android.support.v4.view.ViewPager>
+
+</merge>

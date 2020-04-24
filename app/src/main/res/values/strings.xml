@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">网闻特送</string>
+    <string name="title_home">首页</string>
+    <string name="title_subscription">订阅</string>
+    <string name="title_mine">我的</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="not_enough_length_pwd">至少连接4个点，请重新输入</string>
+
+    <string name="more_watch_draw">绘制解锁图案</string>
+    <string name="more_watch_draw_next">请再次绘制解锁图案</string>
+    <string name="more_watch_draw_error">与上一次绘制不一致，请重新绘制</string>
+    <string name="more_watch_reset">重置</string>
+    <string name="more_watch_manage">管理手势密码</string>
+    <string name="more_watch">请输入手势密码</string>
+    <string name="more_watch_old">请输入原手势密码</string>
+    <string name="more_watch_validate">验证手势密码</string>
+    <string name="more_watch_set">设置手势密码</string>
+    <string name="more_watch_set_success">设置成功</string>
+    <string name="more_watch_error">您已连续5次输错手势，手势解锁已关闭，请重新登录。</string>
+    <string name="more_watch_tip">密码错误，还可以输入</string>
+    <string name="more_watch_ci">次</string>
+    <string name="person_name">真实姓名</string>
+    <string name="more_pwd_old">原密码   </string>
+    <string name="more_pwd_new">新密码   </string>
+    <string name="more_pwd_query">确认新密码</string>
+    <string name="more_pwd_old_hint">请输入原密码</string>
+    <string name="more_pwd_new_hint">请输入新密码</string>
+    <string name="more_pwd_query_hint">请再次输入新密码</string>
+    <string name="more_pwd_old_null">旧密码不能为空！</string>
+    <string name="more_pwd_new_null">新密码不能为空！</string>
+    <string name="more_pwd_query_null">再次输入不能为空！</string>
+    <string name="more_pwd_query_equal">新密码两次输入不一致！</string>
+    <string name="more_pwd_old_equal_new">新密码不能与旧密码一致！</string>
+    <string name="more_pwd_modify_success">修改密码成功！</string>
+    <string name="more_pwd_modify_tip">密码为6-16位的字母、数字或组合</string>
+    <string name="rationale_sd">需要你的电话权限来确定唯一设备</string>
+    <string name="rationale_intall_apk">需要你的安装权限来升级应用</string>
+    //注册页面
+    <string name="account">账号</string>
+    <string name="account_hint">请输入账号</string>
+    <string name="password">密码</string>
+    <string name="password_hint">密码为6-16位的字母、数字或组合</string>
+    <string name="actual_name">真实姓名</string>
+    <string name="name_hint">请输入真实姓名</string>
+    <string name="unit">单位</string>
+    <string name="unit_hint">选择单位</string>
+    <string name="phone">电话</string>
+    <string name="phone_hint">请输入电话号码</string>
+    <string name="mailbox">邮箱</string>
+    <string name="mailbox_hint">请输入邮箱</string>
+    <string name="remarks">备注</string>
+    <string name="remarks_hint">选填</string>
+
+    <string name="register_success">Register push success.</string>
+    <string name="register_fail">Register push fail.</string>
+    <string name="recv_passthrough_message"> Receive a passthrough message. Content is \"%1$s\"</string>
+    <string name="click_notification_message"> Clicked a notification message. Content is \"%1$s\"</string>
+    <string name="arrive_notification_message"> Arrived a notification message. Content is \"%1$s\"</string>
+    <string name="set_alias_success"> Set alias \"%1$s\" success.</string>
+    <string name="set_alias_fail"> Set alias fail for %1$s.</string>
+    <string name="unset_alias_success"> Unset alias \"%1$s\" success.</string>
+    <string name="unset_alias_fail"> Unset alias fail for %1$s.</string>
+    <string name="set_account_success"> Set account \"%1$s\" success.</string>
+    <string name="set_account_fail"> Set account fail for %1$s.</string>
+    <string name="unset_account_success"> Unset account \"%1$s\" success.</string>
+    <string name="unset_account_fail"> Unset account fail for %1$s.</string>
+    <string name="subscribe_topic_success"> Subscribe topic \"%1$s\" success.</string>
+    <string name="subscribe_topic_fail"> Subscribe topic fail for %1$s.</string>
+    <string name="unsubscribe_topic_success"> Unsubscribe topic \"%1$s\" success.</string>
+    <string name="unsubscribe_topic_fail"> Unsubscribe topic fail for %1$s.</string>
+    <string name="set_accept_time_success"> Set accept time %1$s - %2$s success.</string>
+    <string name="set_accept_time_fail"> Set accept time fail for %1$s.</string>
+
+</resources>
