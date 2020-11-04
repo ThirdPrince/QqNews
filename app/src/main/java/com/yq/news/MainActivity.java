@@ -232,6 +232,9 @@ public class MainActivity extends BaseActivity {
         }
         goGesture();
         mRegId = DemoMessageReceiver.mRegId;
+        /**
+         * 华为手机 mRegId = null;
+         */
         OkHttpManager.getInstance().putRegID(mRegId, RomUtils.getRomInfo().getName(), new NetCallBack() {
             @Override
             public void success(String response) {
@@ -365,6 +368,7 @@ public class MainActivity extends BaseActivity {
                                 }
                             });
                         }
+                        Log.e(TAG,"pushtoken ="+pushtoken);
                     }
                 } catch (Exception e) {
                     Log.i(TAG,"getToken failed, " + e);

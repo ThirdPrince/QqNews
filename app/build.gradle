@@ -6,8 +6,8 @@ android {
         applicationId "com.yq.news"
         minSdkVersion 19
         targetSdkVersion 28
-        versionCode 109
-        versionName "1.0.9"
+        versionCode 111
+        versionName "1.1.1"
         multiDexEnabled true
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
@@ -63,7 +63,7 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.7'
     implementation 'com.github.bumptech.glide:glide:4.9.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
-    implementation 'com.blankj:utilcode:1.25.8'
+    implementation 'com.blankj:utilcode:1.29.0'
     implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-14'
     implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-14'
     implementation 'com.zhy:base-rvadapter:3.0.3'

@@ -167,6 +167,7 @@ public class OkHttpManager  implements INetManager{
         {
             String esn =   SPUtils.getInstance().getString("esn");
             equipment =  DeviceUtils.getUniqueDeviceId();
+            Log.e(TAG,"equipment="+equipment);
             if(!TextUtils.isEmpty(esn))
             {
                 equipment = esn ;
